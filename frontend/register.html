@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ToDo App</title>
+    <title>Cadastro - ToDo App</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class ="logo">
-        <img src="./img/Logo.png.png" alt="Logo">
-    
     <div class="container">
-        <h1>Login</h1>
-        <form id="loginForm">
+        <h1>Cadastro</h1>
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Nome" required>
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
+            <input type="password" id="confirmPassword" placeholder="Confirmar Senha" required>
+            <button type="submit">Cadastrar</button>
         </form>
-        <p>Não tem uma conta? <a href="register.html">Cadastre-se aqui</a></p>
+        <p>Já tem uma conta? <a href="index.html">Voltar para o login</a></p>
         <div id="message"></div>
     </div>
-    </div>
 
-    <script src="login.js"></script>
+    <script src="register.js"></script>
 </body>
 </html>
