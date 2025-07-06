@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Editar Perfil</title>
+<style>
+  body { font-family: Arial, sans-serif; padding: 20px; }
+  label, input, button { display: block; margin: 10px 0; }
+  button { padding: 10px; cursor: pointer; }
+</style>
+</head>
+<body>
+
+<h1>Editar Perfil</h1>
+
+<form id="editForm">
+  <label for="name">Novo nome:</label>
+  <input type="text" id="name" name="name" placeholder="Digite seu novo nome" required minlength="3" maxlength="255" />
+  <button type="submit">Salvar</button>
+</form>
+
+<hr />
+
+<button id="deleteBtn" style="background-color: #c00; color: white;">Excluir Perfil</button>
+
+<script src="profile.js"></script>
+
+</body>
+</html>
