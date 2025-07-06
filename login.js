@@ -21,3 +21,4 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
         document.getElementById('message').textContent = result.message || 'Login inválido';
     }
 });
+t
