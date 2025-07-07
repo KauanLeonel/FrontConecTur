@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login - Conectur</title>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
 </head>
+
 <body class="main">
-  <div class="container login-container">
-    <div class="logo-section">
-      <div class="logo-circle">
-        <img src="/img/logov1.png" alt="Palmeira" class="logo-icon" />
+  <div class="container login-container login-wrapper">
+    <!-- Back Arrow -->
+    <a href="../index.html" class="back-arrow">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 18L9 12L15 6" stroke="#FF69B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+
+    <div class="login-content">
+      <div class="logo-section">
+        <div class="logo-circle">
+          <img src="../img/logov2.png" alt="Palmeira" class="logo-icon" />
+        </div>
       </div>
+      <form id="loginForm" class="loginForm"> <!-- Adicionado id="loginForm" -->
+        <h2 class="login-title">Login</h2>
+        
+        <div class="input-group">
+          <input type="email" id="email" placeholder="Email" required class="input-field" />
+          <input type="password" id="password" placeholder="Senha" required class="input-field" />
+        </div>
+        
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+
+        <button type="submit" class="btn primary-btn">CONTINUAR</button> <!-- Removido onclick e adicionado type="submit" -->
+        <div id="message" style="color: red; margin-top: 10px;"></div>
+        <!-- Adicionado elemento para mensagens de erro -->
+      </form>
     </div>
 
-    <form class="login-form">
-      <h2>Login</h2>
-      <input type="email" placeholder="Email" required class="input-field" />
-      <input type="password" placeholder="Senha" required class="input-field" />
-      <button onclick="window.location.href='home.html'" class="btn">Entrar</button>
 
-    </form>
-
-    <div class="button-group">
-      <a href="/index.html" class="btn secondary">Voltar ao Início</a>
-    </div>
   </div>
+
+  <script src="login.js"></script>
 </body>
+
 </html>
